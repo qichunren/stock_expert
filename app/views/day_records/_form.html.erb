@@ -1,0 +1,33 @@
+<%= form_for(@day_record) do |f| %>
+  <% if @day_record.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@day_record.errors.count, "error") %> prohibited this day_record from being saved:</h2>
+
+      <ul>
+      <% @day_record.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :code %><br />
+    <%= f.text_field :code %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :current_price %><br />
+    <%= f.text_field :current_price %>
+  </div>
+  <div class="field">
+    <%= f.label :zhangfu %><br />
+    <%= f.text_field :zhangfu %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

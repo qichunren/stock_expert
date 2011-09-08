@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @stock.name %>
+</p>
+
+<p>
+  <b>Short pinyin name:</b>
+  <%= @stock.short_pinyin_name %>
+</p>
+
+<p>
+  <b>Code:</b>
+  <%= @stock.code %>
+</p>
+
+<p>
+  <b>F0:</b>
+  <%= @stock.f0 %>
+</p>
+
+
+<%= link_to 'Edit', edit_stock_path(@stock) %> |
+<%= link_to 'Back', stocks_path %>

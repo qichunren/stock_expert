@@ -1,4 +1,8 @@
 StockExpert::Application.routes.draw do
+  resources :day_records
+
+  resources :stocks
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

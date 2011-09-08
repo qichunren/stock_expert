@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  short_pinyin_name: MyString
+  code: MyString
+  f0: MyText
+
+two:
+  name: MyString
+  short_pinyin_name: MyString
+  code: MyString
+  f0: MyText

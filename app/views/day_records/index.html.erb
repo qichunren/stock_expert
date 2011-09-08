@@ -1,0 +1,29 @@
+<h1>Listing day_records</h1>
+
+<table>
+  <tr>
+    <th>Code</th>
+    <th>Name</th>
+    <th>Current price</th>
+    <th>Zhangfu</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @day_records.each do |day_record| %>
+  <tr>
+    <td><%= day_record.code %></td>
+    <td><%= day_record.name %></td>
+    <td><%= day_record.current_price %></td>
+    <td><%= day_record.zhangfu %></td>
+    <td><%= link_to 'Show', day_record %></td>
+    <td><%= link_to 'Edit', edit_day_record_path(day_record) %></td>
+    <td><%= link_to 'Destroy', day_record, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Day record', new_day_record_path %>

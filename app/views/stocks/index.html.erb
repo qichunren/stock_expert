@@ -1,0 +1,29 @@
+<h1>Listing stocks</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Short pinyin name</th>
+    <th>Code</th>
+    <th>F0</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @stocks.each do |stock| %>
+  <tr>
+    <td><%= stock.name %></td>
+    <td><%= stock.short_pinyin_name %></td>
+    <td><%= stock.code %></td>
+    <td><%= stock.f0 %></td>
+    <td><%= link_to 'Show', stock %></td>
+    <td><%= link_to 'Edit', edit_stock_path(stock) %></td>
+    <td><%= link_to 'Destroy', stock, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Stock', new_stock_path %>

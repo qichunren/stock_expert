@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Code:</b>
+  <%= @day_record.code %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @day_record.name %>
+</p>
+
+<p>
+  <b>Current price:</b>
+  <%= @day_record.current_price %>
+</p>
+
+<p>
+  <b>Zhangfu:</b>
+  <%= @day_record.zhangfu %>
+</p>
+
+
+<%= link_to 'Edit', edit_day_record_path(@day_record) %> |
+<%= link_to 'Back', day_records_path %>
