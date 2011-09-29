@@ -40,6 +40,7 @@ GEM
       treetop (~> 1.4.8)
     mime-types (1.16)
     mysql2 (0.2.7)
+    nokogiri (1.5.0)
     polyglot (0.3.1)
     rack (1.2.3)
     rack-mount (0.6.14)
@@ -68,8 +69,10 @@ GEM
     tzinfo (0.3.29)
 
 PLATFORMS
+  java
   ruby
 
 DEPENDENCIES
   mysql2 (~> 0.2.6)
+  nokogiri
   rails (= 3.0.9)
